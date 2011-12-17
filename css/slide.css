@@ -1,0 +1,83 @@
+.dotted{
+	border: 1px dotted #999;
+}
+
+/* Enleve la vieille bordure bleue lors de l'édition d'un bloc */
+:focus{
+	outline: inherit;
+}
+
+button{position: absolute; z-index: 8000;}
+
+pre {
+	height: 400px;
+}
+
+
+
+
+.sidebar {
+  z-index: 999;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 10px 16px;
+  overflow: auto;
+  -webkit-transition: margin 0.2s ease-in-out;
+  -moz-transition: margin 0.2s ease-in-out;
+  -o-transition: margin 0.2s ease-in-out;
+  transition: margin 0.2s ease-in-out;
+}
+.sidebar.invisible {
+  margin-left: -400px;
+}
+.sidebar table {
+  border-collapse: collapse;
+}
+.sidebar caption {
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 55px;
+}
+.sidebar tr {
+  margin: 2px 0;
+  border-bottom: 1px solid #CCC;
+}
+.sidebar th{
+  text-align: left;
+  max-width: 300px;
+}
+.sidebar td {
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 5px;
+  font-family: Monospace;
+}
+
+/*Choose Layout */
+.choose-layout{
+	background: url('../images/layouts.png') no-repeat;
+	width: 120px;
+	height: 90px;
+	font-size: 1px;
+	display: -moz-inline-box;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.layout-normal {
+background-position: 0 0;
+}
+.layout-title {
+background-position: 0 -90px;
+}
+.layout-code {
+background-position: 0 -180px;
+}
+
+
